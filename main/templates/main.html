@@ -1,0 +1,260 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--bootstrap.min.css-->
+
+		<link href="{% static 'bootsrap\node_modules\bootstrap\dist\css\bootstrap.min.css' %}" rel="stylesheet"><link href="{% static 'bootsrap\node_modules\bootstrap\dist\js\bootstrap.min.js' %}" rel="stylesheet">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+		<link rel="stylesheet" type="text/css" href="{% static 'style\main.css' %}"/>
+		
+
+		<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+</head>
+<body class='position-relative'>
+	<nav class="navbar navbar-expand-lg shadow-sm py-3">
+  		<div class="container-fluid d-flex justify-content-around">
+			<a class="navbar-brand col-md-3" href="#logo" id='logo'>
+				<img src="{% static 'images/logo/H-INT-16-green-blue.png' %}" width='150' />
+			</a>
+			<div class='d-flex gap-x-3 justify-content-between col-md-5' id='navlist'>
+				<a href='#product' class='text-decoration-none'>Products</a>
+				<a href='#services' class='text-decoration-none'>services</a>
+				<a href='#Branches' class='text-decoration-none'>Branches</a>
+				<a href='#clients' class='text-decoration-none'>Client</a>
+				<a href='{% url "aboutus" %}' class='text-decoration-none'>About us</a>
+    		</div>
+  		</div>
+	</nav>
+
+	<main class='position-relative'>
+		<section class='row py-3 px-5 h-75 d-flex justify-content-around align-items-center hero' id='header' style='background-color:   #8BC6EC;  !important ; background-image: linear-gradient(185deg, #8BC6EC 0%, #9599E2 100%);'>
+			<h1 class='col-md-6 py-4 text-xl text-white' id="titleup">
+				<span> Make your</span> <span>way</span> <span>easier</span> <span>and</span> <span>faster</span> 
+			</h1>
+			<img class='col-md-6' src='{% static "main/images/im1.jpeg" %}' style='z-index: 0' />
+		</section>
+
+		<section class='container m-auto companytasks bg-white rounded'>
+			<div class='row border shadow p-2 rounded p-5 companytaskdetails' >
+				<h3 class='col-sm-5  pe-2 text-secondary d-flex'>
+					<div>
+						<h2>Who we are</h2>
+						<p style='font-size: 20px' id='whoweare'>
+							<span style='font-size: 30px; color: indianred; display: inline-block'>H</span>
+							anjin Ent Co, ltd is leading company in korea, it works in Energy managment
+							field with the technology of IoT(Internet of Things). Our main product is
+						</p>
+					</div>
+				</h3>
+				<div class='col-sm-7 px-4 list-group  position-relative' >
+					<a href='energy' class='d-flex text-decoration-none activitylink  list-group-item p-2'>
+						<div>
+							
+						</div>
+						<div class='px-3'><img src="{% static 'images\icons\energy.png' %}" width='30' /></div>
+						<div class='text-secondary task borders'>Energy Management System</div>
+					</a>
+					<a href='marketing' class='text-decoration-none activitylink list-group-item  p-2'>
+						<div class='d-flex  position-relative' >
+							<div class='px-3'><img src='{% static "images\icons\marketing.png" %}' width='30' /></div>
+							<div class='text-secondary tasks'>Marketing</div>
+						</div>
+					</a>
+					<a href='catering' class='text-decoration-none activitylink list-group-item  p-2'>
+						<div class='d-flex  position-relative' >
+							<div class='px-3'><img src="{% static 'images\icons\catery.png' %}" width='30' /></div>
+							<div class='text-secondary tasks'>Korean Food</div>
+						</div>
+					</a>
+					<a href='constructing' class='text-decoration-none activitylink list-group-item  p-2'>
+						<div class='d-flex  position-relative' >
+							<div class='px-3'><img src="{% static 'images\icons\constructing.png' %}" width='30' /></div>
+							<div class='text-secondary tasks'>Constructing</div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+		</section>
+		
+
+		<section id='product' style='margin-top:' class='container mt-5'>
+			<h3 class='my-3 text-center'>Products</h3>
+			<div class="sliderContainer row d-flex flex-wrap mx-auto">
+				<div class="col-sm-3 card border-none">
+					<img src="{% static 'images/b1.jpg' %}" />
+					<div class='m-2 position-relative h-100'>
+						<h6>Elecrical machine</h6>
+						<p>lorems ollfk sdsfsdf sdasd ioewrds sdjfsdjf jfjskdfksdf</p>
+						<a class='btn btn-primary px-3 py-1 my-2 position-absolute bottom-0 right-0' href='{% url "products" %}'>Read more</a>
+					</div>
+				</div>
+				<div class="col-sm-3 card border-none">
+					<img src="{% static 'images/b2.jpg' %}" />
+					<div class='m-2 position-relative h-100'>
+						<h6>Computers and others<h6> 
+						<p>lorems ollfk sdsfsdf sdf lorems ollfk sdsfsdf sdf</p>
+						<a class='btn btn-primary px-3 py-1 my-2 position-absolute bottom-0 right-0' href='{% url "products" %}'>Read more</a>
+					</div>
+				</div>
+				<div class="col-sm-3 card border-none">
+					<img src="{% static 'images/b3.jpg' %}" />
+					<div class='m-2 position-relative h-100'>
+						<h6>Furnitures</h6>
+						<p>lorems ollfk sdsfsdf sdasd ioewrds sdjfsdjf jfjskdfksdf</p>
+						<a class='btn btn-primary px-3 py-1 my-2 position-absolute bottom-0 right-0' href='{% url "products" %}'>Read more</a>
+					</div>
+				</div>				
+			</div>
+		</section>	
+
+		<br>
+		<div id='services' class='w-100 bg-light py-4'>
+			<div class='d-flex justify-content-between  w-75 m-auto'>
+				<div>
+					<img src="{% static 'images/t1.jpg'  %}" />
+				</div>
+				<div class='p-4'>
+					<h1>Our services  </h1>
+					<p class='w-100 position-relative'>
+						earum officiis quibusdam consequatur nostrum 
+						laboriosam commodi quod architecto. Natus vitae fuga 
+						nihil debitis optio doloremque beatae delectus cumque 
+						autem sequi nisi ex, reprehenderit placeat deleniti omnis! 
+						Repellendus ipsum deleniti ad iure molestias quia, aut, 
+						<br />
+						<a href='{% url "activities" %}' class='mt-2'>details</a>
+					</p>
+				</div>
+
+			</div>
+		</div>		
+		<br>
+		<div id='Branches' class='w-75 m-auto d-flex justify-content-between flex-wrap column-gap-2'>
+			<div class='d-flex border rounded border w-100' style='width=100%'>
+				<div class='row'>
+					<div class='col-md-5 border-start border'>
+						<div class='p-2 border-bottom-1 border bg-light'>Korea</div>
+						<div class='p-2 border-bottom-1 border'>Saudi Arabia</div>
+						<div class='p-2 border-bottom-0 border'>Emarates</div>
+						<div class='p-2 border-bottom-0 border'>Japan</div>
+						<div class='p-2 border-bottom-0 border'>Egypt</div>
+						<div class='p-2 border-bottom-0 border'>Oman</div>
+						<div class='p-2 border-bottom-0 border'>Qatar</div>
+					</div>  
+					<div class='col-md-7 p-2'>
+						<a href='' class='text-decoration-none badge bg-secondary text-white p-2 m-2'>lskkd</a>
+						<a href='' class='text-decoration-none badge bg-secondary text-white p-2 m-2'>lskkd</a>
+						<a href='' class='text-decoration-none badge bg-secondary text-white p-2 m-2'>lskkd</a>
+						<a href='' class='text-decoration-none badge bg-secondary text-white p-2 m-2'>lskkd</a>
+						<a href='' class='text-decoration-none badge bg-secondary text-white p-2 m-2'>lskkd</a>
+						<a href='' class='text-decoration-none badge bg-secondary text-white p-2 m-2'>lskkd</a>
+						<a href='' class='text-decoration-none badge bg-secondary text-white p-2 m-2'>lskkd</a>
+						<a href='' class='text-decoration-none badge bg-secondary text-white p-2 m-2'>lskkd</a>
+						<a href='' class='text-decoration-none badge bg-secondary text-white p-2 m-2'>lskkd</a>
+						<a href='' class='text-decoration-none badge bg-secondary text-white p-2 m-2'>lskkd</a>
+						<a href='' class='text-decoration-none badge bg-secondary text-white p-2 m-2'>lskkd</a>
+						<a href='' class='text-decoration-none badge bg-secondary text-white p-2 m-2'>lskkd</a>
+						<a href='' class='text-decoration-none badge bg-secondary text-white p-2 m-2'>lskkd</a>
+						<a href='' class='text-decoration-none badge bg-secondary text-white p-2 m-2'>lskkd</a>
+						<a href='' class='text-decoration-none badge bg-secondary text-white p-2 m-2'>lskkd</a>
+						<a href='' class='text-decoration-none badge bg-secondary text-white p-2 m-2'>lskkd</a>
+					</div>  
+				</div>
+				
+			</div>	
+
+		</div>
+		<br>
+		<div id='clients' class='my-4'>
+			<h1 class='text-center'>Our Clients</h1>
+			<div class='clientParent d-flex w-75 m-auto m-auto py-5'>
+				<div class='justify-content-between bg-red w-50'>
+					<img src='{% static  "images/client.jpeg" %}' width='100%' />
+				</div>
+				<div class='list-group w-75 px-2'>
+					<div class='list-group-item d-flex py-2 px-3'>
+						<div>img</div>
+						<div>mohammed ali</div>
+					</div>
+					<div class='list-group-item d-flex py-2 px-3'>
+						<div>img</div>
+						<div>Osama Ahmed Taha</div>
+					</div>
+					<div class='list-group-item d-flex py-2 px-3'>
+						<div>img</div>
+						<div>John Adams</div>
+					</div>
+					<div class='list-group-item d-flex py-2 px-3'>
+						<div>img</div>
+						<div>Siddig Mahmoud</div>
+					</div>
+					<div class='list-group-item d-flex py-2 px-3'>
+						<div>img</div>
+						<div>Ibrahim Musa adam</div>
+					</div>
+					<div class='list-group-item d-flex py-2 px-3'>
+						<a href='clients'>Complete list</a>
+					</div>
+
+
+				</div>
+			</div>
+		</div>		
+		<div id='aboutus' class='bg-secondary text-white py-4 px-2'>
+			<div class='d-flex justify-content-between'>
+				<div>tel: 12304040</div>
+				<div>Email: ssdfsdf2@gmail.com</div>
+				<div></div>
+				<div></div>
+				<div></div>
+
+			</div>
+		</div>
+
+</main>
+
+</body>
+<style>
+
+	*{
+		margin: 0 !important;
+		padding: 0 !important;
+		box-sizing: border-box !important;
+		font-family: 'poppins'
+	}
+
+	#logo{
+		color: navy;
+		font-size: 24px;
+		font-weight: 900;
+	}
+	#header{
+		min-height: 60vh;
+		{% comment %} background-color:  #0b5345 !important; {% endcomment %}
+	}
+
+	.sliderContainer {
+	  width: 75%;
+	  height: 300px;
+	  display: flex;
+	  justify-content: space-evenly;
+	  margin: auto;
+}
+.slide {
+	  width: 300px;
+	  flex-shrink: 0;
+	  height: 100%;
+	  border: 1px solid lightgray;
+}
+</style>
+<script src="{% static 'bootsrap\node_modules\bootstrap\dist\js\bootstrap.bundle.min.js' %}"></script>
+</html>
