@@ -48,42 +48,56 @@
 					<div>
 						<h2>Who we are</h2>
 						<p style='font-size: 20px' id='whoweare'>
-							<span style='font-size: 30px; color: indianred; display: inline-block'>H</span>
-							anjin Ent Co, ltd is leading company in korea, it works in Energy managment
+							{% comment %} <span style='font-size: 30px; color: indianred; display: inline-block'>H</span> {% endcomment %}
+							Hanjin Ent Co, ltd is leading company in korea, it works in Energy managment
 							field with the technology of IoT(Internet of Things). Our main product is
 						</p>
 					</div>
 				</h3>
 				<div class='col-sm-7 px-4 list-group  position-relative' >
-					<a href='energy' class='d-flex text-decoration-none activitylink  list-group-item p-2'>
+					<a href='energy' class='d-flex justify-content-between text-decoration-none activitylink  list-group-item p-2'>
 						<div>
-							
+							<div class='d-inline px-3'><img src="{% static 'images\icons\energy.png' %}" width='30' /></div>
+							<div class='d-inline text-secondary task borders'>Energy Management System</div>
 						</div>
-						<div class='px-3'><img src="{% static 'images\icons\energy.png' %}" width='30' /></div>
-						<div class='text-secondary task borders'>Energy Management System</div>
-					</a>
-					<a href='marketing' class='text-decoration-none activitylink list-group-item  p-2'>
-						<div class='d-flex  position-relative' >
-							<div class='px-3'><img src='{% static "images\icons\marketing.png" %}' width='30' /></div>
-							<div class='text-secondary tasks'>Marketing</div>
+						<div>
+							<img src="{% static 'images\icons\arrow.png' %}" width='25' />
 						</div>
 					</a>
-					<a href='catering' class='text-decoration-none activitylink list-group-item  p-2'>
-						<div class='d-flex  position-relative' >
-							<div class='px-3'><img src="{% static 'images\icons\catery.png' %}" width='30' /></div>
-							<div class='text-secondary tasks'>Korean Food</div>
+					<a href='marketing' class='d-flex  justify-content-between text-decoration-none activitylink list-group-item  p-2'>
+						<div>
+							<div class='d-inline  px-3'><img src='{% static "images\icons\marketing.png" %}' width='30' /></div>
+							<div class='d-inline  text-secondary tasks'>Marketing</div>
+						</div>
+						<div>
+							<img src="{% static 'images\icons\arrow.png' %}" width='25' />
 						</div>
 					</a>
-					<a href='constructing' class='text-decoration-none activitylink list-group-item  p-2'>
-						<div class='d-flex  position-relative' >
-							<div class='px-3'><img src="{% static 'images\icons\constructing.png' %}" width='30' /></div>
-							<div class='text-secondary tasks'>Constructing</div>
+					<a href='catering' class='d-flex  justify-content-between text-decoration-none activitylink list-group-item  p-2'>
+						<div>
+							<div class='d-inline  px-3'><img src="{% static 'images\icons\catery.png' %}" width='30' /></div>
+							<div class='d-inline  text-secondary tasks'>Catery</div>
+						</div>
+						<div>
+							<img src="{% static 'images\icons\arrow.png' %}" width='25' />
 						</div>
 					</a>
-					<a href='entertainment' class='text-decoration-none activitylink list-group-item  p-2'>
+					<a href='constructing' class='d-flex  justify-content-between text-decoration-none activitylink list-group-item  p-2'>
+						<div class='dlex-1'>
+							<div class='d-inline  px-3'><img src="{% static 'images\icons\constructing.png' %}" width='30' /></div>
+							<div class='d-inline  text-secondary tasks'>Constructing</div>
+						</div>						
+						<div>
+							<img src="{% static 'images\icons\arrow.png' %}" width='25' />
+						</div>
+					</a>
+					<a href='entertainment' class='d-flex justify-content-between text-decoration-none activitylink list-group-item  p-2'>
 						<div class='d-flex  position-relative' >
-							<div class='px-3'><img src="{% static 'images\icons\celebration.png' %}" width='30' /></div>
-							<div class='text-secondary tasks'>Entertainment</div>
+							<div class='d-inline  px-3'><img src="{% static 'images\icons\celebration.png' %}" width='30' /></div>
+							<div class='d-inline  text-secondary tasks'>Entertainment</div>
+						</div>
+						<div>
+							<img src="{% static 'images\icons\arrow.png' %}" width='25' />
 						</div>
 					</a>
 				</div>
