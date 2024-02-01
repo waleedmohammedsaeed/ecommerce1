@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
 
+
+/* for animation of header */
 #header{
   background-color:    #bdc3c7  !important ;
   box-shadow: 0 0 0.5 rgba(128, 128, 128, 0.5);
@@ -149,3 +151,71 @@
       filter: blur(0);
     }
   }
+
+
+  /* for corean food component */
+
+
+.container{
+	display: grid;
+	width: 900px;
+	/* place-content: center; */
+	font-size: 1.125rem;
+}
+
+  .tag-list{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .tag-list img{
+    padding: 1rem;
+    background: steelblue;
+    border-radius: 0.3rem;
+    color: white;
+    text-align: center;
+  }
+  
+  .scroller{
+    max-width: 100vw;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .scroller-inner{
+    display: flex !important;
+    gap: 3px;
+    /* background-color: black; */
+  }
+  
+  .scroller[data-animated="true"]{
+    overflow: hidden;
+    -webkit-mask: linear-gradient(90deg, transparent, white, 20%, white, 80%, transparent);
+    mask: linear-gradient(90deg, transparent, white, 20%, white, 80%, transparent);
+  }
+  
+  .scroller[data-animated="true"] .scroller-inner{
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroller 
+           var(--_animation-duration, 40s)
+           var(--_animation-direction, forwards) 
+           linear 
+           infinite
+  }
+  
+  .scroller[data-direction='right']{
+    --_animation-direction: reverse;
+  }
+  
+  
+  @keyframes scroller {
+    to{
+      transform: translate(calc(-50% - 0.5rem));
+  /*		transform: translate(-50%);*/
+    }
+  }
+
+
+
+
