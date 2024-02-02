@@ -6,20 +6,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--bootstrap.min.css-->
-
 		<link rel="stylesheet" type="text/css" href="{% static 'style/main.css' %}"/>
 		<link href="{% static 'bootsrap\node_modules\bootstrap\dist\css\bootstrap.min.css' %}" rel="stylesheet">
-		{% comment %} <link href="{% static 'bootsrap\node_modules\bootstrap\dist\js\bootstrap.min.js' %}" rel="js"> {% endcomment %}
-
-        {% comment %} <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> {% endcomment %}
-
-		
-
 		<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 </head>
-<body class='position-relative'>
+<body>
 	<nav class="navbar navbar-expand-lg shadow-sm py-3">
   		<div class="container-fluid d-flex justify-content-around">
 			<a class="navbar-brand col-md-3" href="#logo" id='logo'>
@@ -108,6 +101,40 @@
 		
 
 		<section id='product' style='margin-top:' class=' container mt-5 mx-auto'>
+			<h3 class='my-3 text-center'>Products</h3>
+			<div class='card-container d-flex justify-content-evenly gap-3 my-5 w-100'>
+				<div class='card-prod col-sm-3 card'>
+					<div>
+						<h3 class='px-2 py-2 text-primary'>Korean Food</h3>
+					</div>
+					<hr />
+					<div class='px-4 py-2 text-secondary'>
+						here we present korean food in more than some thing for all 
+						day in more than 20 sites around the saudi kingdom
+					</div>
+				</div>
+				<div class='card-prod col-sm-3 card'>
+					<div>
+						<h3 class='px-2 py-2 text-primary'>Cafeteria</h3>
+					</div>
+					<hr />
+					<div class='px-4 py-2 text-secondary'>
+						here we present korean food in more than some thing for all 
+						day in more than 20 sites around the saudi kingdom
+					</div>
+				</div>
+				<div class='card-prod col-sm-3 card'>
+					<div>
+						<h3 class='px-2 py-2 text-primary'>Resturant</h3>
+					</div>
+					<hr />
+					<div class='px-4 py-2 text-secondary'>
+						here we present korean food in more than some thing for all 
+						day in more than 20 sites around the saudi kingdom
+					</div>
+				</div>
+			</div>
+			
 			<div class='container w-100'>
 				<div class='scroller'>
 					<div class='scroller-inner tag-list '>
@@ -124,7 +151,6 @@
 					</div>
 				</div>
 			</div>
-			<h3 class='my-3 text-center'>Products</h3>
 			{% comment %} <div class="sliderContainer row d-flex flex-wrap mx-auto">
 				<div class="col-sm-3 card border-none">
 					<img src="{% static 'images/b1.jpg' %}" />
@@ -154,7 +180,7 @@
 		</section>	
 
 		<br>
-		<div id='services' class='w-100 bg-light py-4'>
+		<div id='services' class='w-100 bg-light py-5'>
 			<div class='d-flex justify-content-between  w-75 m-auto'>
 				<div>
 					<img src="{% static 'images/t1.jpg'  %}" />
@@ -172,6 +198,18 @@
 					</p>
 				</div>
 
+			</div>
+			<div class='w-75 m-auto py-3 d-flex gap-3 justify-content-center flex-wrap'>
+				<a href='' class='text-decoration-none badge bg-success px-3 py-1'>Logistic</a>
+				<a href='' class='text-decoration-none badge bg-success px-3 py-1'>Import</a>
+				<a href='' class='text-decoration-none badge bg-success px-3 py-1'>Transport</a>
+				<a href='' class='text-decoration-none badge bg-success px-3 py-1'>Cafeteria service</a>
+				<a href='' class='text-decoration-none badge bg-success px-3 py-1'>Entermaint</a>
+				<a href='' class='text-decoration-none badge bg-success px-3 py-1'>Exhibtions</a>
+				<a href='' class='text-decoration-none badge bg-success px-3 py-1'>Salse & Marketing</a>
+				<a href='' class='text-decoration-none badge bg-success px-3 py-1'>Consultant</a>
+				<a href='' class='text-decoration-none badge bg-success px-3 py-1'>Other services</a>
+				<a href='' class='text-decoration-none badge bg-success px-3 py-1'>Data</a>
 			</div>
 		</div>		
 		<br>

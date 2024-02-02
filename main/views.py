@@ -30,3 +30,6 @@ def catering(request):
 
 def constructing(request):
 	return render(request, 'services/constructing.html')
+
+def entertainment(request):
+	return render(request, 'services/entertainment.html')
